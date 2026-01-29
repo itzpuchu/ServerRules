@@ -1,49 +1,80 @@
-<!-- NovaQuest Server Rules -->
-<section class="space-y-6">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaQuest Server Rules</title>
+  <script>
+    // Simple collapse toggle function
+    function toggleCollapse(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle("hidden");
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans">
 
-  <!-- Header Card -->
-  <div class="bg-gray-900 rounded-2xl shadow-lg p-6 border-l-8 border-pink-500">
-    <h1 class="text-3xl font-extrabold text-pink-300">NovaQuest</h1>
-    <p class="text-gray-300 mt-1 text-lg">Server Rules</p>
+  <div class="max-w-4xl mx-auto py-10 px-4 space-y-6">
+
+    <!-- Header Card -->
+    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-pink-500">
+      <h1 class="text-4xl font-extrabold text-pink-300 mb-2">NovaQuest</h1>
+      <p class="text-gray-300 text-lg">Server Rules & Guidelines</p>
+    </div>
+
+    <!-- Disclaimers Card -->
+    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-red-500">
+      <h2 class="text-2xl font-bold text-red-300 mb-2">Disclaimers</h2>
+      <p class="leading-relaxed">
+        Using any third-party software to gain an unfair advantage is strictly prohibited and may result in punishment.  
+        Repeat offenses can lead to harsher penalties. The Founder reserves the right to permanently remove a player from the network if they show no intent to correct their behavior.
+      </p>
+    </div>
+
+    <!-- Knowledge of Rules Card -->
+    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-yellow-500">
+      <h2 class="text-2xl font-bold text-yellow-300 mb-2">Knowledge of Rules</h2>
+      <p class="leading-relaxed">
+        Claiming ignorance of the rules is not a valid excuse. All rules listed are basic expectations commonly enforced across games and online communities. By playing on NovaQuest, you agree to follow these standards.
+      </p>
+    </div>
+
+    <!-- Rule Changes Card -->
+    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-blue-500">
+      <h2 class="text-2xl font-bold text-blue-300 mb-2">Rule Changes</h2>
+      <p class="leading-relaxed">
+        Rules may be updated over time with input from the Management Team but will always be finalized by the Founder. All efforts are made to keep the rules clear, fair, and airtight.
+      </p>
+    </div>
+
+    <!-- Loopholes Card -->
+    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-purple-500">
+      <h2 class="text-2xl font-bold text-purple-300 mb-2">Loopholes & Exploits</h2>
+      <p class="leading-relaxed">
+        Attempting to exploit loopholes or use creative methods to bypass rules is not allowed.  
+        Depending on the situation, this may result in punishment or the rule being revised to prevent further abuse.
+      </p>
+    </div>
+
+    <!-- Permissions Card -->
+    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-pink-400">
+      <button onclick="toggleCollapse('permissions')" class="w-full flex items-center justify-between focus:outline-none">
+        <h2 class="text-2xl font-bold text-pink-300">Staff Permissions</h2>
+        <span class="text-pink-300 font-bold">▼</span>
+      </button>
+      <div id="permissions" class="mt-2 hidden">
+        <ul class="list-disc pl-6 space-y-1 text-gray-200">
+          <li><strong>Helpers:</strong> Warnings, kicks, mutes</li>
+          <li><strong>JrMods:</strong> Temporary & permanent punishments, system tools</li>
+          <li><strong>Mods:</strong> Authority over Helpers & JrMods, can issue/reverse punishments</li>
+          <li><strong>SrMods:</strong> Advanced punishment controls, IP actions, reviews lower staff</li>
+          <li><strong>Admins+:</strong> Unrestricted permissions, confidential & high-risk commands</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 
-  <!-- Disclaimers Card -->
-  <div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-red-500">
-    <h2 class="text-2xl font-bold text-red-300 mb-2">Disclaimers</h2>
-    <p class="text-gray-200 leading-relaxed">
-      The use of any third-party software that provides an unfair advantage is strictly prohibited
-      and may result in punishment. Punishments vary depending on the severity of the offense and
-      the player’s punishment history. The Founder reserves the right to issue a permanent removal
-      from the network if it is determined that the player shows no intent to change their behavior.
-    </p>
-  </div>
-
-  <!-- Knowledge of Rules Card -->
-  <div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-yellow-500">
-    <h2 class="text-2xl font-bold text-yellow-300 mb-2">Knowledge of Rules</h2>
-    <p class="text-gray-200 leading-relaxed">
-      Claiming ignorance of the rules is not a valid excuse. All rules listed are considered basic
-      expectations commonly enforced across online games and applications used in everyday life.
-      By playing on NovaQuest, you agree to follow these standards.
-    </p>
-  </div>
-
-  <!-- Rule Changes Card -->
-  <div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-blue-500">
-    <h2 class="text-2xl font-bold text-blue-300 mb-2">Rule Changes</h2>
-    <p class="text-gray-200 leading-relaxed">
-      Rules may be adjusted over time with input from the Management Team but will always be
-      finalized by the Founder. Every effort is made to keep all rules clear, fair, and airtight.
-    </p>
-  </div>
-
-  <!-- Loopholes Card -->
-  <div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-purple-500">
-    <h2 class="text-2xl font-bold text-purple-300 mb-2">Loopholes & Exploits</h2>
-    <p class="text-gray-200 leading-relaxed">
-      Attempting to exploit loopholes to bypass the rules is not permitted. Depending on the
-      situation, this may result in punishment or the rule being revised to prevent further abuse.
-    </p>
-  </div>
-
-</section>
+</body>
+</html>
