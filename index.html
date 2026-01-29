@@ -62,41 +62,85 @@
       </p>
     </div>
 
-  <!-- Unfair Advantage Card -->
-<div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-green-500">
-  <button onclick="toggleCollapse('unfair')" class="w-full flex items-center justify-between focus:outline-none mb-4">
-    <h2 class="text-2xl font-bold text-green-300">Unfair Advantage</h2>
-    <span class="text-green-300 font-bold">▼</span>
+  <!-- Unfair Practices & Security Rules -->
+<div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-red-500 mb-6">
+  <button onclick="toggleCollapse('security')" class="w-full flex items-center justify-between focus:outline-none mb-4">
+    <h2 class="text-2xl font-bold text-red-300">Unfair Practices & Security Rules</h2>
+    <span class="text-red-300 font-bold">▼</span>
   </button>
-  <div id="unfair" class="hidden text-gray-200 leading-relaxed space-y-3">
-    <p>
-      Players found gaining an unfair advantage will be punished. The severity depends on whether the player participates in competitive modes:
-    </p>
-    <ul class="list-disc pl-6 space-y-2">
-      <li><strong>Regular Players (non-competitive):</strong>
-        <ul class="list-decimal pl-6 space-y-1 text-gray-300">
-          <li>First offense: 3-day ban</li>
-          <li>Second offense: 7-day ban</li>
-          <li>Third offense: 14-day ban</li>
-        </ul>
-        <p class="text-gray-200 mt-1">
-          Stats will not be removed for regular players.
-        </p>
-      </li>
-      <li><strong>Competitive Players:</strong>
-        <ul class="list-decimal pl-6 space-y-1 text-gray-300">
-          <li>First offense: 3-day ban + stats removal + season competitive ban</li>
-          <li>Second offense: 7-day ban + stats removal + season competitive ban</li>
-          <li>Third offense: 14-day ban + stats removal + season competitive ban</li>
-        </ul>
-      </li>
-    </ul>
-    <p>
-      These measures protect fairness for all players and maintain the integrity of the server. Repeat violations may result in longer bans or permanent removal from competitive play for competitive players.
-    </p>
+  <div id="security" class="hidden text-gray-200 leading-relaxed space-y-4">
+
+    <!-- Cheating -->
+    <div>
+      <h3 class="text-xl font-semibold text-pink-300 mb-1">Cheating & Unfair Advantage</h3>
+      <p class="leading-relaxed">
+        Any software, modification, or tool that gives a player an <strong>advantage outside normal gameplay</strong> is strictly prohibited. This includes, but is not limited to:
+      </p>
+      <ul class="list-disc pl-6 text-gray-300 space-y-1">
+        <li>Hacks, cheats, or exploits (auto-clickers, macros, combat automation, X-ray, wall hacks, NUKER, etc.)</li>
+        <li>Movement modifications (flight, speed, or similar) that are <strong>not explicitly allowed for your rank or server permissions</strong></li>
+        <li>Any other third-party software or tool that provides an unfair advantage, even if it is not listed here</li>
+      </ul>
+      <p class="text-gray-300 mt-1">
+        Ignorance of this rule will <strong>not</strong> be accepted. Players are responsible for ensuring any tool or ability they use is explicitly allowed.
+      </p>
+    </div>
+
+    <!-- Alternative Accounts -->
+    <div>
+      <h3 class="text-xl font-semibold text-yellow-300 mb-1">Alternative Accounts (Alts)</h3>
+      <p class="leading-relaxed">
+        Use of multiple accounts is only allowed with explicit permission from the Founder.  
+        If multiple players share the same IP, you must create a support ticket so management can link your accounts.  
+        Attempting to bypass restrictions without permission will result in punishment or removal from the network.
+      </p>
+    </div>
+
+    <!-- Server/User Attacks -->
+    <div>
+      <h3 class="text-xl font-semibold text-blue-300 mb-1">Server & User Attacks</h3>
+      <p class="leading-relaxed">
+        Any action intended to harm, disrupt, or compromise the server or its members is strictly prohibited. This includes:
+      </p>
+      <ul class="list-disc pl-6 text-gray-300 space-y-1">
+        <li>Lagging, crashing, or attempting to exploit server stability</li>
+        <li>Malicious links, IP grabbers, or malware</li>
+        <li>DDoS attacks or Doxxing any member, staff, or server</li>
+      </ul>
+      <p class="text-gray-300 mt-1">
+        Consequences:
+      </p>
+      <ul class="list-disc pl-6 text-gray-300 space-y-1">
+        <li>Immediate IP ban from the network</li>
+        <li>Report to Mojang and/or server host if applicable</li>
+        <li>Permanent removal from NovaQuest for severe cases</li>
+      </ul>
+      <p class="text-gray-300 mt-1">
+        Any threat of such attacks will be treated with the same severity as an actual attack.
+      </p>
+    </div>
+
+    <!-- IRL Trading -->
+    <div>
+      <h3 class="text-xl font-semibold text-purple-300 mb-1">IRL Trading</h3>
+      <p class="leading-relaxed">
+        Trading any in-game items, ranks, or currency for real-world money or goods is strictly prohibited.  
+        Attempting, suggesting, or offering such trades will result in **immediate network removal**, regardless of whether a deal actually occurs.
+      </p>
+    </div>
+
+    <!-- Gambling -->
+    <div>
+      <h3 class="text-xl font-semibold text-green-300 mb-1">Gambling</h3>
+      <p class="leading-relaxed">
+        Player-run casinos or gambling systems are strictly forbidden.  
+        Mentioning or promoting gambling anywhere on the server is also prohibited, unless explicitly approved by NovaQuest (following EULA compliance).  
+        This includes text chat, builds, mini-games, or other creative implementations.
+      </p>
+    </div>
+
   </div>
 </div>
-
 
 
 </body>
