@@ -63,27 +63,30 @@
     </div>
 
     <!-- Competitive Violations Card -->
-    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-green-500">
-      <button onclick="toggleCollapse('competitive')" class="w-full flex items-center justify-between focus:outline-none mb-4">
-        <h2 class="text-2xl font-bold text-green-300">Competitive Violations</h2>
-        <span class="text-green-300 font-bold">▼</span>
-      </button>
-      <div id="competitive" class="hidden text-gray-200 leading-relaxed space-y-3">
-        <p>
-          Players caught cheating in competitive modes will face <strong>three consequences</strong>:
-        </p>
-        <ul class="list-disc pl-6 space-y-1">
-          <li><strong>Temporary Ban:</strong> 3-day ban from all server activities.</li>
-          <li><strong>Stats Removal:</strong> All competitive stats and leaderboard points will be wiped.</li>
-          <li><strong>Season Competitive Ban:</strong> Players cannot participate in competitive matches for the remainder of the current season.</li>
-        </ul>
-        <p>
-          These measures protect the integrity of competitive leaderboards and ensure fairness. Repeat violations may result in extended competitive bans or permanent disqualification.
-        </p>
-      </div>
-    </div>
-
+<div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-green-500">
+  <button onclick="toggleCollapse('competitive')" class="w-full flex items-center justify-between focus:outline-none mb-4">
+    <h2 class="text-2xl font-bold text-green-300">Competitive Violations</h2>
+    <span class="text-green-300 font-bold">▼</span>
+  </button>
+  <div id="competitive" class="hidden text-gray-200 leading-relaxed space-y-3">
+    <p>
+      Players caught cheating in competitive modes will face <strong>three consequences</strong>:
+    </p>
+    <ul class="list-disc pl-6 space-y-1">
+      <li><strong>Temporary Ban:</strong> Ban from all server activities for a duration depending on the offense:</li>
+      <ul class="list-decimal pl-6 space-y-1 text-gray-300">
+        <li>First offense: 3 days</li>
+        <li>Second offense: 7 days</li>
+        <li>Third offense: 14 days</li>
+      </ul>
+      <li><strong>Stats Removal:</strong> All competitive stats and leaderboard points will be wiped.</li>
+      <li><strong>Season Competitive Ban:</strong> Players cannot participate in competitive matches for the remainder of the current season.</li>
+    </ul>
+    <p>
+      These measures protect the integrity of competitive leaderboards and ensure fairness. Repeat violations may result in extended competitive bans or permanent disqualification.
+    </p>
   </div>
+</div>
 
 </body>
 </html>
