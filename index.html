@@ -32,52 +32,41 @@
     margin-bottom: 2rem;
   }
 
-  /* CARD STYLING */
+  /* CARD BASE */
   .card {
     border-radius: 14px;
     padding: 1.6rem;
     margin-bottom: 1.5rem;
     border-left: 6px solid;
-    box-shadow:
-      0 10px 30px rgba(0,0,0,0.45),
-      inset 0 0 0 1px rgba(255,255,255,0.04);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.5);
   }
 
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow:
-      0 20px 50px rgba(0,0,0,0.6),
-      inset 0 0 0 1px rgba(255,255,255,0.08);
-  }
-
-  /* COLOR GRADIENTS */
+  /* COLORED BACKGROUNDS */
   .info {
     border-color: #38bdf8;
-    background: linear-gradient(135deg, rgba(56,189,248,0.18), rgba(2,6,23,0.95));
+    background: linear-gradient(135deg, #020617, #082f49);
   }
 
   .minor {
     border-color: #22c55e;
-    background: linear-gradient(135deg, rgba(34,197,94,0.18), rgba(2,6,23,0.95));
+    background: linear-gradient(135deg, #020617, #052e1a);
   }
 
   .major {
     border-color: #facc15;
-    background: linear-gradient(135deg, rgba(250,204,21,0.18), rgba(2,6,23,0.95));
+    background: linear-gradient(135deg, #020617, #3a2f05);
   }
 
   .severe {
     border-color: #f97316;
-    background: linear-gradient(135deg, rgba(249,115,22,0.22), rgba(2,6,23,0.95));
+    background: linear-gradient(135deg, #020617, #3a1f05);
   }
 
   .critical {
     border-color: #ef4444;
-    background: linear-gradient(135deg, rgba(239,68,68,0.22), rgba(2,6,23,0.95));
+    background: linear-gradient(135deg, #020617, #3a0505);
   }
 
-  /* HEADINGS & TEXT */
   .card h2 {
     margin-top: 0;
     color: #f8fafc;
@@ -86,7 +75,7 @@
 
   .punishment {
     font-weight: bold;
-    color: #cbd5f5;
+    color: #c7d2fe;
     margin-bottom: 0.75rem;
   }
 
@@ -102,12 +91,12 @@
   details summary {
     cursor: pointer;
     font-weight: bold;
-    color: #38bdf8;
+    color: #7dd3fc;
     margin-bottom: 0.75rem;
   }
 
   details summary:hover {
-    color: #7dd3fc;
+    color: #bae6fd;
   }
 
   footer {
@@ -127,7 +116,6 @@
 These rules exist to keep NovaQuest fair, safe, and enjoyable for everyone.
 </p>
 
-<!-- GENERAL POLICY -->
 <div class="card info">
   <h2>General Enforcement Policy</h2>
   <ul>
@@ -139,45 +127,33 @@ These rules exist to keep NovaQuest fair, safe, and enjoyable for everyone.
   </ul>
 </div>
 
-<!-- MINOR CHAT -->
 <div class="card minor">
   <h2>Minor Chat Offenses</h2>
-  <p class="punishment">Punishment: Warn → 1h Mute → 12h Mute → 1d Mute</p>
-
-  <details>
-    <summary>Examples</summary>
-    <ul>
-      <li>Spamming or flooding chat</li>
-      <li>Symbol or character spam</li>
-      <li>Encouraging chat spam</li>
-      <li>Misleading Users</li>
-      <li>Minor NSFW references</li>
-    </ul>
-  </details>
+  <p class="punishment">Warn → 1h Mute → 12h Mute → 1d Mute</p>
+  <ul>
+    <li>Spamming or flooding chat</li>
+    <li>Symbol or character spam</li>
+    <li>Encouraging chat spam</li>
+    <li>Misleading users</li>
+    <li>Minor NSFW references</li>
+  </ul>
 </div>
 
-<!-- MAJOR CHAT -->
 <div class="card major">
   <h2>Major Chat Offenses</h2>
-  <p class="punishment">Punishment: 3d → 5d → 7d → 14d Mute</p>
-
-  <details>
-    <summary>Examples</summary>
-    <ul>
-      <li>Toxic or hostile language</li>
-      <li>Hate speech or slurs</li>
-      <li>Explicit NSFW content</li>
-      <li>Leaking personal information</li>
-      <li>Sensitive topics (politics, drugs, sexual remarks)</li>
-    </ul>
-  </details>
+  <p class="punishment">3d → 5d → 7d → 14d Mute</p>
+  <ul>
+    <li>Toxic or hostile language</li>
+    <li>Hate speech or slurs</li>
+    <li>Explicit NSFW content</li>
+    <li>Leaking personal information</li>
+    <li>Sensitive topics</li>
+  </ul>
 </div>
 
-<!-- SEVERE CHAT -->
 <div class="card severe">
   <h2>Severe Chat Offenses</h2>
-  <p class="punishment">Punishment: 30d Mute → Permanent Mute → Permanent Ban</p>
-
+  <p class="punishment">30d Mute → Permanent Mute → Permanent Ban</p>
   <ul>
     <li>Death threats or encouraging self-harm</li>
     <li>Racism or discrimination</li>
@@ -185,36 +161,28 @@ These rules exist to keep NovaQuest fair, safe, and enjoyable for everyone.
   </ul>
 </div>
 
-<!-- UNFAIR ADVANTAGE -->
 <div class="card critical">
   <h2>Unfair Advantage</h2>
-  <p class="punishment">Punishment: 3d → 7d → 14d → 30d Ban</p>
-
-  <details>
-    <summary>Includes but is not limited to</summary>
-    <ul>
-      <li>Hacked clients or modified gameplay</li>
-      <li>X-Ray, ESP, Fly, Speed, Killaura, Reach</li>
-      <li>Macros, scripts, or automation</li>
-      <li>AFK grinding or failing staff checks</li>
-      <li>Boosting other players</li>
-    </ul>
-  </details>
-</div>
-
-<!-- COMPETITIVE -->
-<div class="card critical">
-  <h2>Competitive Violations</h2>
-  <p class="punishment">
-    3-Day Ban + Stat Wipe + Removal from Leaderboards + Competitive Ban (Season)
-  </p>
-
+  <p class="punishment">3d → 7d → 14d → 30d Ban</p>
   <ul>
-    <li>Unfair advantage impacting leaderboards</li>
+    <li>Hacked clients or modified gameplay</li>
+    <li>X-Ray, Fly, Speed, Reach, KillAura</li>
+    <li>Macros, scripts, automation</li>
+    <li>AFK grinding or failing staff checks</li>
+    <li>Boosting other players</li>
   </ul>
 </div>
 
-<!-- PERMANENT -->
+<div class="card critical">
+  <h2>Competitive Violations</h2>
+  <p class="punishment">
+    3-Day Ban + Stat Wipe + Leaderboard Removal + Competitive Ban
+  </p>
+  <ul>
+    <li>Any unfair advantage affecting competitive modes</li>
+  </ul>
+</div>
+
 <div class="card critical">
   <h2>Permanent & IP-Ban Offenses</h2>
   <ul>
@@ -225,18 +193,17 @@ These rules exist to keep NovaQuest fair, safe, and enjoyable for everyone.
   </ul>
 </div>
 
-<!-- IRL -->
 <div class="card severe">
   <h2>Market & IRL Trading</h2>
   <ul>
-    <li>IRL trading (real money or services)</li>
-    <li>Attempting, suggesting, or joking counts</li>
-    <li>IRL scamming or Buycraft scamming</li>
+    <li>IRL trading (money or services)</li>
+    <li>Attempting or suggesting counts</li>
+    <li>IRL or Buycraft scamming</li>
   </ul>
 </div>
 
 <footer>
-NovaQuest © All rules subject to change to protect the community.
+NovaQuest © Rules may change to protect the community.
 </footer>
 
 </div>
