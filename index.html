@@ -1,38 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NovaQuest Server Rules</title>
-  <script>
-    // Simple collapse toggle function
-    function toggleCollapse(id) {
-      const el = document.getElementById(id);
-      el.classList.toggle("hidden");
-    }
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 text-gray-200 font-sans">
-
-  <div class="max-w-4xl mx-auto py-10 px-4 space-y-6">
-
-    <!-- Header Card -->
-    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-pink-500">
-      <h1 class="text-4xl font-extrabold text-pink-300 mb-2">NovaQuest</h1>
-      <p class="text-gray-300 text-lg">Server Rules & Guidelines</p>
-    </div>
-
-   <!-- Disclaimers Card -->
-<div class="max-w-2xl mx-auto bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-red-500">
-  <h2 class="text-2xl font-bold text-red-300 mb-2">Disclaimers</h2>
-  <p class="text-gray-200 leading-relaxed mb-2">
-    Using any third-party software to gain an unfair advantage is strictly prohibited and may result in punishment. Repeat offenses may result in harsher penalties. The Founder reserves the right to permanently remove a player from the network if they show no intent to correct their behavior.
-  </p>
-  <p class="text-gray-200 leading-relaxed mb-2">
-    Claiming ignorance of the rules is not a valid excuse. All rules listed are basic expectations commonly enforced across games and online communities. By playing on NovaQuest, you agree to follow these standards.
-  </p>
-  <p class="text-gray-200 leading-relaxed">
-    Rules may be updated over time with input from the Management Team but will always be finalized by the Founder. Efforts are made to keep rules clear, fair, and airtight. Attempting to exploit loopholes or bypass rules is not allowed and may result in punishment or rule revisions.
-  </p>
+<!-- Competitive Violations Card -->
+<div class="max-w-2xl mx-auto bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-green-500 mb-6">
+  <button onclick="toggleCollapse('competitive')" class="w-full flex items-center justify-between focus:outline-none mb-4">
+    <h2 class="text-2xl font-bold text-green-300">Competitive Violations</h2>
+    <span class="text-green-300 font-bold">▼</span>
+  </button>
+  <div id="competitive" class="hidden text-gray-200 leading-relaxed space-y-3">
+    <p>
+      Players caught cheating in competitive modes will face **three consequences**:
+    </p>
+    <ul class="list-disc pl-6 space-y-1">
+      <li><strong>Temporary Ban:</strong> 3-day ban from all server activities.</li>
+      <li><strong>Stats Removal:</strong> All competitive stats and leaderboard points will be wiped to maintain fairness.</li>
+      <li><strong>Season Competitive Ban:</strong> Players cannot participate in competitive matches for the remainder of the current season.</li>
+    </ul>
+    <p>
+      These measures protect the integrity of competitive leaderboards and ensure fairness for all players. Repeat violations may result in longer penalties or permanent disqualification from competitive play.
+    </p>
+  </div>
 </div>
