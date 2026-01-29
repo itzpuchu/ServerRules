@@ -1,211 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>NovaQuest Server Rules</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: #e5e7eb;
-  }
-
-  .container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 2rem;
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #38bdf8;
-    margin-bottom: 0.5rem;
-  }
-
-  .subtitle {
-    text-align: center;
-    color: #9ca3af;
-    margin-bottom: 2rem;
-  }
-
-  /* CARD BASE */
-  .card {
-    border-radius: 14px;
-    padding: 1.6rem;
-    margin-bottom: 1.5rem;
-    border-left: 6px solid;
-    box-shadow: 0 12px 35px rgba(0,0,0,0.5);
-  }
-
-  /* COLORED BACKGROUNDS */
-  .info {
-    border-color: #38bdf8;
-    background: linear-gradient(135deg, #020617, #082f49);
-  }
-
-  .minor {
-    border-color: #22c55e;
-    background: linear-gradient(135deg, #020617, #052e1a);
-  }
-
-  .major {
-    border-color: #facc15;
-    background: linear-gradient(135deg, #020617, #3a2f05);
-  }
-
-  .severe {
-    border-color: #f97316;
-    background: linear-gradient(135deg, #020617, #3a1f05);
-  }
-
-  .critical {
-    border-color: #ef4444;
-    background: linear-gradient(135deg, #020617, #3a0505);
-  }
-
-  .card h2 {
-    margin-top: 0;
-    color: #f8fafc;
-    font-size: 1.6rem;
-  }
-
-  .punishment {
-    font-weight: bold;
-    color: #c7d2fe;
-    margin-bottom: 0.75rem;
-  }
-
-  ul {
-    padding-left: 1.2rem;
-    line-height: 1.7;
-  }
-
-  li {
-    margin-bottom: 0.4rem;
-  }
-
-  details summary {
-    cursor: pointer;
-    font-weight: bold;
-    color: #7dd3fc;
-    margin-bottom: 0.75rem;
-  }
-
-  details summary:hover {
-    color: #bae6fd;
-  }
-
-  footer {
-    text-align: center;
-    color: #64748b;
-    margin-top: 3rem;
-    font-size: 0.9rem;
-  }
-</style>
+  <meta charset="UTF-8">
+  <title>NovaQuest Server Rules</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-<div class="container">
+<body class="bg-gray-900 text-gray-100 font-sans">
 
-<h1>NovaQuest Server Rules</h1>
-<p class="subtitle">
-These rules exist to keep NovaQuest fair, safe, and enjoyable for everyone.
-</p>
-
-<div class="card info">
-  <h2>General Enforcement Policy</h2>
-  <ul>
-    <li>Ignorance of the rules is not a valid excuse.</li>
-    <li>Joking, sarcasm, or roleplay does not exempt you from punishment.</li>
-    <li>Using loopholes to bypass rules is prohibited.</li>
-    <li>Staff may punish harmful behavior even if not explicitly listed.</li>
-    <li>Punishments may escalate based on intent, impact, or history.</li>
-  </ul>
-</div>
-
-<div class="card minor">
-  <h2>Minor Chat Offenses</h2>
-  <p class="punishment">Warn → 1h Mute → 12h Mute → 1d Mute</p>
-  <ul>
-    <li>Spamming or flooding chat</li>
-    <li>Symbol or character spam</li>
-    <li>Encouraging chat spam</li>
-    <li>Misleading users</li>
-    <li>Minor NSFW references</li>
-  </ul>
-</div>
-
-<div class="card major">
-  <h2>Major Chat Offenses</h2>
-  <p class="punishment">3d → 5d → 7d → 14d Mute</p>
-  <ul>
-    <li>Toxic or hostile language</li>
-    <li>Hate speech or slurs</li>
-    <li>Explicit NSFW content</li>
-    <li>Leaking personal information</li>
-    <li>Sensitive topics</li>
-  </ul>
-</div>
-
-<div class="card severe">
-  <h2>Severe Chat Offenses</h2>
-  <p class="punishment">30d Mute → Permanent Mute → Permanent Ban</p>
-  <ul>
-    <li>Death threats or encouraging self-harm</li>
-    <li>Racism or discrimination</li>
-    <li>Advertising other servers or services</li>
-  </ul>
-</div>
-
-<div class="card critical">
-  <h2>Unfair Advantage</h2>
-  <p class="punishment">3d → 7d → 14d → 30d Ban</p>
-  <ul>
-    <li>Hacked clients or modified gameplay</li>
-    <li>X-Ray, Fly, Speed, Reach, KillAura</li>
-    <li>Macros, scripts, automation</li>
-    <li>AFK grinding or failing staff checks</li>
-    <li>Boosting other players</li>
-  </ul>
-</div>
-
-<div class="card critical">
-  <h2>Competitive Violations</h2>
-  <p class="punishment">
-    3-Day Ban + Stat Wipe + Leaderboard Removal + Competitive Ban
+<header class="bg-gradient-to-r from-indigo-700 to-purple-700 text-white py-8 shadow-lg">
+  <h1 class="text-4xl font-extrabold text-center">NovaQuest Server Rules</h1>
+  <p class="text-center mt-3 max-w-3xl mx-auto text-lg text-gray-200">
+    These rules exist to keep NovaQuest fair, safe, and enjoyable for everyone.
   </p>
-  <ul>
-    <li>Any unfair advantage affecting competitive modes</li>
-  </ul>
-</div>
+</header>
 
-<div class="card critical">
-  <h2>Permanent & IP-Ban Offenses</h2>
-  <ul>
-    <li>DDoS or DDoS threats</li>
-    <li>Doxxing or threats</li>
-    <li>Botting or mass automation</li>
-    <li>Stalking or grooming behavior</li>
-  </ul>
-</div>
+<main class="max-w-5xl mx-auto p-6 space-y-6">
 
-<div class="card severe">
-  <h2>Market & IRL Trading</h2>
-  <ul>
-    <li>IRL trading (money or services)</li>
-    <li>Attempting or suggesting counts</li>
-    <li>IRL or Buycraft scamming</li>
-  </ul>
-</div>
+  <!-- GENERAL POLICY -->
+  <section class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-indigo-500">
+    <h2 class="text-2xl font-bold text-indigo-300 mb-3">General Enforcement Policy</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-200">
+      <li>Ignorance of the rules is not a valid excuse.</li>
+      <li>Joking, sarcasm, or roleplay does not exempt punishment.</li>
+      <li>Using loopholes to bypass rules is prohibited.</li>
+      <li>Staff may punish harmful behavior not explicitly listed.</li>
+      <li>Punishments escalate based on intent, impact, or history.</li>
+    </ul>
+  </section>
 
-<footer>
-NovaQuest © Rules may change to protect the community.
+  <!-- MINOR CHAT -->
+  <section class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-green-500">
+    <h2 class="text-2xl font-bold text-green-300 mb-1">Minor Chat Offenses</h2>
+    <p class="font-semibold text-gray-300 mb-3">
+      Punishment: Warn → 1h → 12h → 1d Mute
+    </p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-200">
+      <li>Spamming or flooding chat</li>
+      <li>Symbol or character spam</li>
+      <li>Encouraging spam</li>
+      <li>Misleading users</li>
+      <li>Minor NSFW references</li>
+    </ul>
+  </section>
+
+  <!-- MAJOR CHAT -->
+  <section class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-yellow-500">
+    <h2 class="text-2xl font-bold text-yellow-300 mb-1">Major Chat Offenses</h2>
+    <p class="font-semibold text-gray-300 mb-3">
+      Punishment: 3d → 5d → 7d → 14d Mute
+    </p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-200">
+      <li>Toxic or hostile language</li>
+      <li>Hate speech or slurs</li>
+      <li>Explicit NSFW content</li>
+      <li>Leaking personal information</li>
+      <li>Sensitive topics</li>
+    </ul>
+  </section>
+
+  <!-- SEVERE CHAT -->
+  <section class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-orange-500">
+    <h2 class="text-2xl font-bold text-orange-300 mb-1">Severe Chat Offenses</h2>
+    <p class="font-semibold text-gray-300 mb-3">
+      Punishment: 30d Mute → Permanent Mute → Permanent Ban
+    </p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-200">
+      <li>Death threats or encouraging self-harm</li>
+      <li>Racism or discrimination</li>
+      <li>Advertising other servers or services</li>
+    </ul>
+  </section>
+
+  <!-- UNFAIR ADVANTAGE -->
+  <section class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-red-500">
+    <h2 class="text-2xl font-bold text-red-300 mb-1">Unfair Advantage</h2>
+    <p class="font-semibold text-gray-300 mb-3">
+      Punishment: 3d → 7d → 14d → 30d Ban
+    </p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-200">
+      <li>Hacked clients or modified gameplay</li>
+      <li>X-Ray, Fly, Speed, Reach, KillAura</li>
+      <li>Macros, scripts, automation</li>
+      <li>AFK grinding or failing staff checks</li>
+      <li>Boosting other players</li>
+    </ul>
+  </section>
+
+  <!-- COMPETITIVE -->
+  <section class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-red-500">
+    <h2 class="text-2xl font-bold text-red-300 mb-1">Competitive Violations</h2>
+    <p class="font-semibold text-gray-300 mb-3">
+      3-Day Ban + Stat Wipe + Leaderboard Removal + Competitive Ban
+    </p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-200">
+      <li>Any unfair advantage impacting competitive modes</li>
+    </ul>
+  </section>
+
+  <!-- PERMANENT -->
+  <section class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-red-600">
+    <h2 class="text-2xl font-bold text-red-400 mb-3">Permanent & IP-Ban Offenses</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-200">
+      <li>DDoS or DDoS threats</li>
+      <li>Doxxing or threats</li>
+      <li>Botting or mass automation</li>
+      <li>Stalking or grooming behavior</li>
+    </ul>
+  </section>
+
+  <!-- IRL TRADING -->
+  <section class="bg-gray-800 rounded-2xl shadow-lg p-6 border-l-8 border-teal-500">
+    <h2 class="text-2xl font-bold text-teal-300 mb-3">Market & IRL Trading</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-200">
+      <li>IRL trading (money or services)</li>
+      <li>Attempting or suggesting counts</li>
+      <li>IRL or Buycraft scamming</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="bg-gradient-to-r from-indigo-700 to-purple-700 text-white text-center py-4 mt-10">
+  © 2026 NovaQuest. All rules subject to change.
 </footer>
 
-</div>
 </body>
 </html>
