@@ -2,147 +2,217 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>NovaQuest | Server Rules</title>
+<title>NovaQuest Server Rules</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.tailwindcss.com"></script>
 
 <style>
-  body { background:#0b1020; }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #38bdf8;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: #9ca3af;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    background: #020617;
+    border-radius: 14px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 6px solid;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  }
+
+  .minor { border-color: #22c55e; }
+  .major { border-color: #facc15; }
+  .severe { border-color: #f97316; }
+  .critical { border-color: #ef4444; }
+  .info { border-color: #38bdf8; }
+
+  .card h2 {
+    margin-top: 0;
+    color: #f8fafc;
+    font-size: 1.6rem;
+  }
+
+  .punishment {
+    font-weight: bold;
+    color: #cbd5f5;
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    line-height: 1.7;
+  }
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+
+  details summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #38bdf8;
+    margin-bottom: 0.75rem;
+  }
+
+  details summary:hover {
+    color: #7dd3fc;
+  }
+
+  footer {
+    text-align: center;
+    color: #64748b;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
 </style>
 </head>
 
-<body class="text-gray-300">
+<body>
+<div class="container">
 
-<header class="max-w-6xl mx-auto px-6 py-12 text-center">
-  <h1 class="text-4xl font-extrabold text-pink-400">NovaQuest</h1>
-  <p class="text-gray-400 mt-2">Official Server Rules</p>
-</header>
-
-<main class="max-w-6xl mx-auto px-6 space-y-10 pb-20">
+<h1>NovaQuest Server Rules</h1>
+<p class="subtitle">
+These rules exist to keep NovaQuest fair, safe, and enjoyable for everyone.
+</p>
 
 <!-- GENERAL POLICY -->
-<section class="bg-gray-900 rounded-2xl p-6 border-l-8 border-pink-500">
-  <h2 class="text-2xl font-bold text-pink-300 mb-3">General Rule Policy</h2>
-  <ul class="list-disc pl-6 space-y-1">
-    <li>Claiming you did not read or know the rules is never an excuse.</li>
-    <li>Claiming something was “just a joke” is never an excuse.</li>
-    <li>If you are unsure whether something is allowed, you must ask staff first.</li>
-    <li>Rules may be updated at any time to close loopholes or prevent abuse.</li>
-    <li>Staff may punish harmful behavior even if it is not explicitly listed.</li>
+<div class="card info">
+  <h2>General Enforcement Policy</h2>
+  <ul>
+    <li>Ignorance of the rules is not a valid excuse.</li>
+    <li>Joking, sarcasm, or roleplay does not exempt you from punishment.</li>
+    <li>Using loopholes to bypass rules is prohibited.</li>
+    <li>Staff may punish harmful behavior even if not explicitly listed.</li>
+    <li>Punishments may escalate based on intent, impact, or history.</li>
   </ul>
-</section>
+</div>
 
-<!-- ISLAND / TEAM INFO -->
-<section class="bg-gray-900 rounded-2xl p-6">
-  <h2 class="text-2xl font-bold text-blue-300 mb-3">Island & Team Information</h2>
-  <ul class="list-disc pl-6 space-y-1">
-    <li>Transferring island ownership permanently gives full control to the new leader.</li>
-    <li>Team disputes are handled by island leaders unless rules are broken.</li>
-    <li>Team payouts are paid to the island leader to distribute.</li>
-    <li>Shared IP households must create a ticket before any punishment occurs.</li>
-    <li>Winner Titles require 14 days of participation before the final week.</li>
-  </ul>
-</section>
+<!-- MINOR CHAT -->
+<div class="card minor">
+  <h2>Minor Chat Offenses</h2>
+  <p class="punishment">Punishment: Warn → 1h Mute → 12h Mute → 1d Mute</p>
 
-<!-- COMPETITIVE -->
-<section class="bg-gray-900 rounded-2xl p-6">
-  <h2 class="text-2xl font-bold text-orange-300 mb-3">Competitive & Leaderboards</h2>
-  <ul class="list-disc pl-6 space-y-1">
-    <li>Cheating, boosting, merging, or abuse may result in disqualification.</li>
-    <li>Entire islands may be penalized for one member’s violations.</li>
-    <li>Star penalties reduce stars by at least 25%.</li>
-    <li>Leaving a disqualified island requires a ticket and forfeiting non-store items.</li>
-  </ul>
-</section>
+  <details>
+    <summary>Examples</summary>
+    <ul>
+      <li>Spamming or flooding chat</li>
+      <li>Excessive capitalization</li>
+      <li>Symbol or character spam</li>
+      <li>Encouraging chat spam</li>
+      <li>Fake commands or misleading messages</li>
+      <li>Minor NSFW references</li>
+      <li>Non-English messages in public chat</li>
+    </ul>
+  </details>
+</div>
 
-<!-- CHAT RULES -->
-<section class="bg-gray-900 rounded-2xl p-6">
-  <h2 class="text-2xl font-bold text-red-300 mb-3">Chat & Communication</h2>
-  <ul class="list-disc pl-6 space-y-1">
-    <li>No spam, excessive caps, symbols, or repeated messages.</li>
-    <li>No harassment, insults, toxicity, or baiting.</li>
-    <li>No hate speech, slurs, or discriminatory language.</li>
-    <li>No impersonating staff, creators, or public figures.</li>
-    <li>No fake server information or misleading messages.</li>
-    <li>No NSFW, sexual, political, or sensitive content.</li>
-  </ul>
-</section>
+<!-- MAJOR CHAT -->
+<div class="card major">
+  <h2>Major Chat Offenses</h2>
+  <p class="punishment">Punishment: 3d → 5d → 7d → 14d Mute</p>
 
-<!-- PUNISHMENTS -->
-<section class="bg-gray-900 rounded-2xl p-6">
-  <h2 class="text-2xl font-bold text-purple-300 mb-3">Punishments</h2>
-  <ul class="list-disc pl-6 space-y-1">
-    <li>Warnings are used for minor offenses.</li>
-    <li>Mutes block global and linked Discord chat.</li>
-    <li>Mute evasion increases punishment.</li>
-    <li>Ban evasion results in all linked accounts being banned.</li>
-    <li>Repeated violations may result in community removal or blacklist.</li>
+  <details>
+    <summary>Examples</summary>
+    <ul>
+      <li>Toxic or hostile language</li>
+      <li>Hate speech or slurs</li>
+      <li>Staff disrespect</li>
+      <li>Explicit NSFW content</li>
+      <li>Leaking personal information</li>
+      <li>Sensitive topics (politics, drugs, sexual remarks)</li>
+    </ul>
+  </details>
+</div>
+
+<!-- SEVERE CHAT -->
+<div class="card severe">
+  <h2>Severe Chat Offenses</h2>
+  <p class="punishment">Punishment: 30d Mute → Permanent Mute → Permanent Ban</p>
+
+  <ul>
+    <li>Death threats or encouraging self-harm</li>
+    <li>Racism or discrimination</li>
+    <li>Advertising other servers or services</li>
   </ul>
-</section>
+</div>
 
 <!-- UNFAIR ADVANTAGE -->
-<section class="bg-gray-900 rounded-2xl p-6 border-l-8 border-red-500">
-  <h2 class="text-2xl font-bold text-red-400 mb-3">Unfair Advantage</h2>
-  <p class="mb-2">
-    Any method that gives an unfair advantage over normal gameplay is prohibited.
+<div class="card critical">
+  <h2>Unfair Advantage</h2>
+  <p class="punishment">Punishment: 3d → 7d → 14d → 30d Ban</p>
+
+  <details>
+    <summary>Includes but is not limited to</summary>
+    <ul>
+      <li>Hacked clients or modified gameplay</li>
+      <li>X-Ray, ESP, Fly, Speed, Killaura, Reach</li>
+      <li>Macros, scripts, or automation</li>
+      <li>AFK grinding or failing staff checks</li>
+      <li>Boosting other players</li>
+    </ul>
+  </details>
+</div>
+
+<!-- COMPETITIVE -->
+<div class="card critical">
+  <h2>Competitive Violations</h2>
+  <p class="punishment">
+    3-Day Ban + Stat Wipe + Removal from Leaderboards + Competitive Ban (Season)
   </p>
-  <ul class="list-disc pl-6 space-y-1">
-    <li>Hacked or modified clients</li>
-    <li>Macros, automation, or AFK grinding</li>
-    <li>X-ray, nuker, fly, speed, combat mods</li>
-    <li>Bug abusing or exploiting unintended mechanics</li>
-    <li>Using features outside your rank permissions</li>
+
+  <ul>
+    <li>Unfair advantage impacting leaderboards</li>
+    <li>Account sharing or alt abuse</li>
   </ul>
-  <p class="mt-3 text-gray-400">
-    If a modification is not listed, it does not mean it is allowed.
-  </p>
-</section>
+</div>
 
-<!-- ECONOMY -->
-<section class="bg-gray-900 rounded-2xl p-6">
-  <h2 class="text-2xl font-bold text-yellow-300 mb-3">Economy Rules</h2>
-  <ul class="list-disc pl-6 space-y-1">
-    <li>No boosting players outside your team.</li>
-    <li>No large gifts intended to affect leaderboards.</li>
-    <li>No scamming, misleading trades, or false advertising.</li>
-    <li>No money loans or item renting.</li>
+<!-- PERMANENT -->
+<div class="card critical">
+  <h2>Permanent & IP-Ban Offenses</h2>
+  <ul>
+    <li>DDoS or DDoS threats</li>
+    <li>Doxxing or threats</li>
+    <li>Botting or mass automation</li>
+    <li>Duping items</li>
+    <li>Stalking or grooming behavior</li>
   </ul>
-</section>
+</div>
 
-<!-- ALTS -->
-<section class="bg-gray-900 rounded-2xl p-6">
-  <h2 class="text-2xl font-bold text-indigo-300 mb-3">Alternate Accounts</h2>
-  <ul class="list-disc pl-6 space-y-1">
-    <li>Account sharing is prohibited.</li>
-    <li>Alt limits vary by game mode.</li>
-    <li>Using EasyMC or public accounts is not allowed.</li>
-    <li>All alts must remain on the same island or team.</li>
+<!-- IRL -->
+<div class="card severe">
+  <h2>Market & IRL Trading</h2>
+  <ul>
+    <li>IRL trading (real money or services)</li>
+    <li>Attempting, suggesting, or joking counts</li>
+    <li>IRL scamming or Buycraft scamming</li>
   </ul>
-</section>
+</div>
 
-<!-- SECURITY -->
-<section class="bg-gray-900 rounded-2xl p-6 border-l-8 border-red-600">
-  <h2 class="text-2xl font-bold text-red-500 mb-3">Security & Attacks</h2>
-  <ul class="list-disc pl-6 space-y-1">
-    <li>DDoS threats or attempts</li>
-    <li>IP grabbers or malicious links</li>
-    <li>Crashing, lagging, or destabilizing the server</li>
-  </ul>
-  <p class="mt-2 text-gray-400">
-    These actions result in permanent removal and reports to Mojang and hosting providers.
-  </p>
-</section>
+<footer>
+NovaQuest © All rules subject to change to protect the community.
+</footer>
 
-<!-- FINAL -->
-<section class="bg-gray-900 rounded-2xl p-6 border-l-8 border-blue-500">
-  <h2 class="text-2xl font-bold text-blue-300 mb-2">Final Notes</h2>
-  <p>
-    NovaQuest is committed to fairness, transparency, and community safety.
-    If unsure — ask before acting.
-  </p>
-</section>
-
-</main>
-
+</div>
 </body>
 </html>
